@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <img id="vro" src="./hellovro.jpg">
+    <img id="vro" src="./hellovro.jpg" class="mid">
     <audio id="sound" src="./ReelAudio-69122.mp3"> </audio>
     <script>
         var audio = document.getElementById("sound");
@@ -13,10 +13,29 @@
         audio.src = "./ReelAudio-69122.mp3";
         document.addEventListener("click", function(e) {
             if(e.target === img)
+            {
                 audio.play();
+                
+            }   
         });
     </script>
+    <style>
+    .mid{
+ width: 300px;
+ height: 300px;
+ background: #222;
+ -webkit-transition: width 2s ease, height 2s ease;
+ -moz-transition: width 2s ease, height 2s ease;
+ -o-transition: width 2s ease, height 2s ease;
+ -ms-transition: width 2s ease, height 2s ease;
+ transition: width 2s ease, height 2s ease;
+}
 
+.mid:hover {
+ width: 121px;
+ height: 181px;
+}
+    </style>
 </body>
 
 
