@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hello vro 🔥</title>
+</head>
+
+<body>
+    <img id="vro" src="./hellovro.jpg">
+    <audio id="sound" src="./ReelAudio-69122.mp3"> </audio>
+    <script>
+        var audio = document.getElementById("sound");
+        var img = document.getElementById("vro");
+        audio.src = "./ReelAudio-69122.mp3";
+        document.addEventListener("click", function(e) {
+            if(e.target === img)
+                audio.play();
+        });
+    </script>
+
+</body>
+
+
+</html>
